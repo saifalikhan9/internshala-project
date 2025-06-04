@@ -60,12 +60,7 @@ export function Navbar() {
             <Link href="/photographers" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-accent">
               Photographers
             </Link>
-            <Link href="/categories" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-accent">
-              Categories
-            </Link>
-            <Link href="/about" className="px-3 py-2 rounded-md text-sm font-medium hover:bg-accent">
-              About
-            </Link>
+          
           </nav>
 
           {/* Search & Auth on Desktop */}
@@ -88,7 +83,7 @@ export function Navbar() {
                 </button>
               )}
             </div>
-            <Button variant="default">Sign In</Button>
+          
           </div>
 
           {/* Mobile Search Button */}
@@ -118,22 +113,7 @@ export function Navbar() {
                   >
                     Photographers
                   </Link>
-                  <Link 
-                    href="/categories" 
-                    className="py-2 px-4 rounded-md hover:bg-accent transition-colors"
-                  >
-                    Categories
-                  </Link>
-                  <Link 
-                    href="/about" 
-                    className="py-2 px-4 rounded-md hover:bg-accent transition-colors"
-                  >
-                    About
-                  </Link>
-                  <div className="border-t pt-4 mt-2">
-                    <Button className="w-full">Sign In</Button>
-                  </div>
-                </nav>
+                  </nav>
               </SheetContent>
             </Sheet>
           </div>

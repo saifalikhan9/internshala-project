@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 import { FilterSidebar } from "@/components/photographers/filter-sidebar";
 import { PhotographerGrid } from "@/components/photographers/photographer-grid";
@@ -10,16 +10,16 @@ export default function PhotographersPage() {
   const { updateFilter } = useFilter();
 
   useEffect(() => {
-    const tags = searchParams.get("tags"); // Get the 'tags' query parameter
+    const tags = searchParams.get("tags");
     if (tags) {
-      updateFilter("tags", [tags]); // Update the filter context with the selected tag
+      updateFilter("tags", [tags]);
     }
-  }, []);
+  },[]);
 
   return (
-    <div className="container mx-auto px-4 py-8">
-      <div className="mb-6">
-        <h1 className="text-3xl font-bold">Photographers in India</h1>
+    <div className="container  mx-auto px-4 py-20">
+      <div className="mb-6 text-center">
+        <h1 className="text-3xl  font-bold">Photographers in India</h1>
         <p className="text-muted-foreground mt-1">
           Find and connect with the best photographers for your next project
         </p>

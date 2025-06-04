@@ -41,7 +41,9 @@ export function ReviewCard({ review }: ReviewCardProps) {
     try {
       return format(parseISO(review.date), 'MMM d, yyyy');
     } catch (error) {
-      return review.date;
+      console.error(error);
+      
+      
     }
   })();
 

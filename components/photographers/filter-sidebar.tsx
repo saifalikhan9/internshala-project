@@ -1,5 +1,7 @@
 "use client";
 
+"use client";
+
 import React from "react";
 import { useFilter } from "@/context/FilterContext";
 import { Button } from "@/components/ui/button";
@@ -12,7 +14,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { RangeSlider } from "@/components/ui/input-range";
+
 import { SortOption } from "@/lib/types";
 import {
   Sheet,
@@ -23,8 +25,8 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { FilterX, SlidersHorizontal } from "lucide-react";
+import { Slider } from "@/components/ui/slider";
 
-// Photography styles options
 const STYLES = [
   "Traditional",
   "Candid",
@@ -44,8 +46,6 @@ const TAGS = [
   "Couple",
   "Family",
 ];
-
-// Cities options
 const CITIES = [
   "All Cities",
   "Bengaluru",
@@ -55,16 +55,12 @@ const CITIES = [
   "Hyderabad",
   "Kolkata",
 ];
-
-// Sort options
 const SORT_OPTIONS: { value: SortOption; label: string }[] = [
   { value: "price-low-to-high", label: "Price: Low to High" },
   { value: "price-high-to-low", label: "Price: High to Low" },
   { value: "rating-high-to-low", label: "Rating: High to Low" },
   { value: "recently-added", label: "Recently Added" },
 ];
-
-// Rating options
 const RATING_OPTIONS = [
   { value: 0, label: "Any Rating" },
   { value: 3, label: "3+ Stars" },
@@ -78,8 +74,6 @@ interface FilterSidebarProps {
 
 export function FilterSidebar({ className }: FilterSidebarProps) {
   const { filters, updateFilter, setFilters } = useFilter();
-
-  const formatPrice = (price: number) => `₹${price.toLocaleString()}`;
 
   return (
     <>
@@ -111,33 +105,29 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
         </div>
 
         <div className="space-y-6">
-          {/* Price Range Filter */}
+          {/* Price Filter (ShadCN Slider, Max Only) */}
           <div>
             <Label className="text-base font-medium mb-4 block">
-              Price Range
+              Max Price
             </Label>
-            <RangeSlider
+            <Slider
               min={0}
               max={50000}
               step={1000}
-              value={filters.priceRange}
+              value={[filters.priceRange[1]]}
               onValueChange={(value) =>
-                updateFilter("priceRange", value as [number, number])
+                updateFilter("priceRange", [0, value[0]] as [number, number])
               }
-              className="mb-8"
-              showMarks
-              formatValue={formatPrice}
             />
+            <div className="flex justify-between text-sm mt-2">
+              <span>₹0</span>
+              <span>₹{filters.priceRange[1].toLocaleString()}</span>
+            </div>
           </div>
 
           {/* City Filter */}
           <div>
-            <Label
-              htmlFor="city-select"
-              className="text-base font-medium mb-3 block"
-            >
-              City
-            </Label>
+            <Label className="text-base font-medium mb-3 block">City</Label>
             <Select
               value={filters.city || "All Cities"}
               onValueChange={(value) =>
@@ -159,12 +149,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
 
           {/* Rating Filter */}
           <div>
-            <Label
-              htmlFor="rating-select"
-              className="text-base font-medium mb-3 block"
-            >
-              Rating
-            </Label>
+            <Label className="text-base font-medium mb-3 block">Rating</Label>
             <Select
               value={String(filters.minRating)}
               onValueChange={(value) =>
@@ -214,6 +199,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
               ))}
             </div>
           </div>
+
           {/* Tags Filter */}
           <div>
             <Label className="text-base font-medium mb-3 block">Tags</Label>
@@ -221,7 +207,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
               {TAGS.map((tag) => (
                 <div key={tag} className="flex items-center space-x-2">
                   <Checkbox
-                    id={`style-${tag}`}
+                    id={`tag-${tag}`}
                     checked={filters.tags.includes(tag)}
                     onCheckedChange={(checked) => {
                       if (checked) {
@@ -244,12 +230,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
 
           {/* Sort By */}
           <div>
-            <Label
-              htmlFor="sort-select"
-              className="text-base font-medium mb-3 block"
-            >
-              Sort By
-            </Label>
+            <Label className="text-base font-medium mb-3 block">Sort By</Label>
             <Select
               value={filters.sortBy}
               onValueChange={(value) =>
@@ -271,7 +252,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
         </div>
       </div>
 
-      {/* Mobile Filter Button */}
+      {/* Mobile Filter Button remains unchanged */}
       <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <Sheet>
           <SheetTrigger asChild>
@@ -311,20 +292,24 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
               {/* Price Range Filter */}
               <div>
                 <Label className="text-base font-medium mb-4 block">
-                  Price Range
+                  Max Price
                 </Label>
-                <RangeSlider
+                <Slider
                   min={0}
                   max={50000}
                   step={1000}
-                  value={filters.priceRange}
+                  value={[filters.priceRange[1]]}
                   onValueChange={(value) =>
-                    updateFilter("priceRange", value as [number, number])
+                    updateFilter("priceRange", [0, value[0]] as [
+                      number,
+                      number
+                    ])
                   }
-                  className="mb-8"
-                  showMarks
-                  formatValue={formatPrice}
                 />
+                <div className="flex justify-between text-sm mt-2">
+                  <span>₹0</span>
+                  <span>₹{filters.priceRange[1].toLocaleString()}</span>
+                </div>
               </div>
 
               {/* City Filter */}

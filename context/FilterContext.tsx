@@ -39,7 +39,7 @@ export const FilterProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
     const fetchPhotographers = async () => {
       try {
-        const response = await fetch('http://localhost:3000/photographers');
+        const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/api/photographers`);
         const data: Photographer[] = await response.json();
         console.log(data,"data");
         
