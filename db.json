@@ -1,0 +1,412 @@
+{
+  "photographers": [
+    {
+      "id": 1,
+      "name": "Arya Sharma",
+      "slug": "arya-sharma",
+      "profilePicture": "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 15000,
+      "rating": 4.8,
+      "reviewCount": 124,
+      "styles": ["Candid", "Traditional"],
+      "tags": ["Maternity", "Newborn", "Family"],
+      "bio": "Capturing life's precious moments for over 10 years. Specializing in maternity and newborn photography with a candid approach that tells your unique story.",
+      "gallery": [
+        "https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2402850/pexels-photo-2402850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3868389/pexels-photo-3868389.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5759275/pexels-photo-5759275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Priya K.",
+          "rating": 5,
+          "comment": "Arya captured our maternity photos beautifully. Every shot was perfect!",
+          "date": "2023-11-15"
+        },
+        {
+          "name": "Rahul M.",
+          "rating": 4.5,
+          "comment": "Professional, patient and creative. Would definitely recommend for family portraits.",
+          "date": "2023-10-22"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Vikram Patel",
+      "slug": "vikram-patel",
+      "profilePicture": "https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Mumbai",
+      "startingPrice": 25000,
+      "rating": 4.9,
+      "reviewCount": 208,
+      "styles": ["Studio", "Candid"],
+      "tags": ["Wedding", "Pre-wedding", "Fashion"],
+      "bio": "Award-winning photographer with a passion for creative storytelling. My work has been featured in Vogue India and Bride Today.",
+      "gallery": [
+        "https://images.pexels.com/photos/1024993/pexels-photo-1024993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2235071/pexels-photo-2235071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1037915/pexels-photo-1037915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1456951/pexels-photo-1456951.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1808777/pexels-photo-1808777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Anjali S.",
+          "rating": 5,
+          "comment": "Vikram shot our wedding and the photos are beyond amazing. He has a great eye for detail.",
+          "date": "2024-02-18"
+        },
+        {
+          "name": "Karan T.",
+          "rating": 5,
+          "comment": "Our pre-wedding shoot was fantastic. Vikram made us feel so comfortable.",
+          "date": "2024-01-05"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Meera Rajput",
+      "slug": "meera-rajput",
+      "profilePicture": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 12000,
+      "rating": 4.6,
+      "reviewCount": 87,
+      "styles": ["Outdoor", "Candid"],
+      "tags": ["Maternity", "Children", "Family"],
+      "bio": "I believe in capturing the natural beauty of expectant mothers and the joy of families. My style is relaxed, candid, and focused on the emotions of the moment.",
+      "gallery": [
+        "https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1416736/pexels-photo-1416736.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3662803/pexels-photo-3662803.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1261909/pexels-photo-1261909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Deepa R.",
+          "rating": 4.5,
+          "comment": "Meera was wonderful with our kids. She captured some amazing candid moments.",
+          "date": "2023-12-10"
+        },
+        {
+          "name": "Siddharth J.",
+          "rating": 4.8,
+          "comment": "Our maternity photoshoot was perfect. Meera has a gift for making you feel comfortable.",
+          "date": "2024-02-28"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Raj Kapoor",
+      "slug": "raj-kapoor",
+      "profilePicture": "https://images.pexels.com/photos/2269872/pexels-photo-2269872.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Delhi",
+      "startingPrice": 30000,
+      "rating": 4.9,
+      "reviewCount": 156,
+      "styles": ["Traditional", "Studio"],
+      "tags": ["Wedding", "Corporate", "Events"],
+      "bio": "With over 15 years of experience, I specialize in capturing the essence of Indian weddings and corporate events with a blend of traditional and contemporary styles.",
+      "gallery": [
+        "https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1680172/pexels-photo-1680172.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2613260/pexels-photo-2613260.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1043474/pexels-photo-1043474.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Neha G.",
+          "rating": 5,
+          "comment": "Raj and his team were exceptional at our wedding. They didn't miss a single moment.",
+          "date": "2023-09-05"
+        },
+        {
+          "name": "Aditya M.",
+          "rating": 4.7,
+          "comment": "We hired Raj for our company's annual event and the photos were outstanding.",
+          "date": "2024-01-20"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Priya Desai",
+      "slug": "priya-desai",
+      "profilePicture": "https://images.pexels.com/photos/1036622/pexels-photo-1036622.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 18000,
+      "rating": 4.7,
+      "reviewCount": 93,
+      "styles": ["Candid", "Outdoor"],
+      "tags": ["Maternity", "Family", "Couple"],
+      "bio": "I'm passionate about creating timeless images that tell your unique story. My approach is relaxed and candid, allowing your personality to shine through.",
+      "gallery": [
+        "https://images.pexels.com/photos/1310522/pexels-photo-1310522.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1382731/pexels-photo-1382731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3998359/pexels-photo-3998359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/4491434/pexels-photo-4491434.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5759281/pexels-photo-5759281.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Ananya P.",
+          "rating": 4.8,
+          "comment": "Priya made our maternity shoot so special. She has a true talent for capturing emotion.",
+          "date": "2023-10-12"
+        },
+        {
+          "name": "Gaurav S.",
+          "rating": 4.5,
+          "comment": "Our family photos turned out beautifully. Priya is great with kids too!",
+          "date": "2024-03-05"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Nikhil Mehta",
+      "slug": "nikhil-mehta",
+      "profilePicture": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Mumbai",
+      "startingPrice": 22000,
+      "rating": 4.8,
+      "reviewCount": 112,
+      "styles": ["Fashion", "Studio", "Outdoor"],
+      "tags": ["Portrait", "Model Portfolio", "Commercial"],
+      "bio": "Fashion and commercial photographer with a modern aesthetic. My work has been featured in multiple fashion magazines and advertising campaigns.",
+      "gallery": [
+        "https://images.pexels.com/photos/1689731/pexels-photo-1689731.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1840608/pexels-photo-1840608.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/775358/pexels-photo-775358.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1516680/pexels-photo-1516680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1001850/pexels-photo-1001850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Isha M.",
+          "rating": 5,
+          "comment": "Nikhil is incredibly talented. My portfolio shots were exactly what I needed to get signed with an agency.",
+          "date": "2023-11-10"
+        },
+        {
+          "name": "Rohan D.",
+          "rating": 4.7,
+          "comment": "Great commercial photographer. Our brand campaign photos exceeded expectations.",
+          "date": "2024-01-15"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Saanvi Reddy",
+      "slug": "saanvi-reddy",
+      "profilePicture": "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Hyderabad",
+      "startingPrice": 20000,
+      "rating": 4.7,
+      "reviewCount": 78,
+      "styles": ["Traditional", "Candid"],
+      "tags": ["Wedding", "Pre-wedding", "Engagement"],
+      "bio": "I believe that every love story is unique and deserves to be told through beautiful imagery. My approach combines traditional portraiture with candid moments.",
+      "gallery": [
+        "https://images.pexels.com/photos/1468379/pexels-photo-1468379.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1821095/pexels-photo-1821095.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1486058/pexels-photo-1486058.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2253065/pexels-photo-2253065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2162892/pexels-photo-2162892.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Kavita B.",
+          "rating": 4.8,
+          "comment": "Saanvi captured our wedding beautifully. She has an amazing eye for detail.",
+          "date": "2023-12-20"
+        },
+        {
+          "name": "Vishal K.",
+          "rating": 4.6,
+          "comment": "Our pre-wedding shoot was fantastic. Saanvi made us feel comfortable and the photos are gorgeous.",
+          "date": "2024-02-10"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Aditya Sen",
+      "slug": "aditya-sen",
+      "profilePicture": "https://images.pexels.com/photos/1043473/pexels-photo-1043473.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Kolkata",
+      "startingPrice": 10000,
+      "rating": 4.5,
+      "reviewCount": 65,
+      "styles": ["Documentary", "Candid"],
+      "tags": ["Events", "Cultural", "Street"],
+      "bio": "Documentary photographer specializing in cultural events and street photography. I capture the essence of Bengal through my lens.",
+      "gallery": [
+        "https://images.pexels.com/photos/1484794/pexels-photo-1484794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3585325/pexels-photo-3585325.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1172207/pexels-photo-1172207.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1486064/pexels-photo-1486064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2283661/pexels-photo-2283661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Debashish M.",
+          "rating": 4.7,
+          "comment": "Aditya's documentation of our Durga Puja celebrations was exceptional. He truly captured the spirit of the event.",
+          "date": "2023-10-30"
+        },
+        {
+          "name": "Mitali S.",
+          "rating": 4.3,
+          "comment": "Great street photography. Aditya has a knack for finding beauty in everyday moments.",
+          "date": "2024-01-05"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Tara Singh",
+      "slug": "tara-singh",
+      "profilePicture": "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 17000,
+      "rating": 4.7,
+      "reviewCount": 91,
+      "styles": ["Outdoor", "Lifestyle"],
+      "tags": ["Maternity", "Family", "Baby"],
+      "bio": "I specialize in outdoor maternity and family photography. My style focuses on natural light and genuine emotions to create memories that last a lifetime.",
+      "gallery": [
+        "https://images.pexels.com/photos/5759279/pexels-photo-5759279.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/4149050/pexels-photo-4149050.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1433270/pexels-photo-1433270.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/2905828/pexels-photo-2905828.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3075535/pexels-photo-3075535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Shweta A.",
+          "rating": 4.8,
+          "comment": "Tara made our maternity photoshoot so special. She suggested beautiful locations and the photos turned out amazing.",
+          "date": "2024-02-15"
+        },
+        {
+          "name": "Arjun P.",
+          "rating": 4.6,
+          "comment": "Great family photographer who knows how to work with children. We're so happy with our photos.",
+          "date": "2023-11-28"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Rohan Malhotra",
+      "slug": "rohan-malhotra",
+      "profilePicture": "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Chennai",
+      "startingPrice": 19000,
+      "rating": 4.8,
+      "reviewCount": 102,
+      "styles": ["Studio", "Traditional"],
+      "tags": ["Product", "Food", "Commercial"],
+      "bio": "Commercial photographer with expertise in product and food photography. I work with brands to create compelling visual content that sells.",
+      "gallery": [
+        "https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1739748/pexels-photo-1739748.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/884596/pexels-photo-884596.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/1099680/pexels-photo-1099680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Vivek S.",
+          "rating": 4.9,
+          "comment": "Rohan's product photography helped increase our online sales significantly. Professional and creative.",
+          "date": "2023-12-08"
+        },
+        {
+          "name": "Leela R.",
+          "rating": 4.7,
+          "comment": "We hired Rohan for our restaurant menu photography. The images are stunning and appetizing.",
+          "date": "2024-01-25"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Kiran Joshi",
+      "slug": "kiran-joshi",
+      "profilePicture": "https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 14000,
+      "rating": 4.6,
+      "reviewCount": 75,
+      "styles": ["Outdoor", "Candid"],
+      "tags": ["Maternity", "Baby", "Children"],
+      "bio": "Specializing in maternity and baby photography, I create timeless images that celebrate the miracle of life and the bond between parent and child.",
+      "gallery": [
+        "https://images.pexels.com/photos/5471705/pexels-photo-5471705.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3875380/pexels-photo-3875380.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/6954182/pexels-photo-6954182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/3660654/pexels-photo-3660654.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/4262875/pexels-photo-4262875.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Lakshmi K.",
+          "rating": 4.7,
+          "comment": "Kiran made our maternity shoot comfortable and fun. The photos capture this special time beautifully.",
+          "date": "2023-11-18"
+        },
+        {
+          "name": "Vijay M.",
+          "rating": 4.5,
+          "comment": "We did a newborn photoshoot with Kiran and the images are beautiful keepsakes we'll treasure forever.",
+          "date": "2024-03-02"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Divya Nair",
+      "slug": "divya-nair",
+      "profilePicture": "https://images.pexels.com/photos/1587009/pexels-photo-1587009.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "location": "Bengaluru",
+      "startingPrice": 16000,
+      "rating": 4.8,
+      "reviewCount": 89,
+      "styles": ["Outdoor", "Candid"],
+      "tags": ["Maternity", "Couple", "Pre-wedding"],
+      "bio": "I love creating beautiful, timeless images that tell your story. My approach is to capture genuine moments and emotions in a relaxed and fun atmosphere.",
+      "gallery": [
+        "https://images.pexels.com/photos/1405761/pexels-photo-1405761.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/4149064/pexels-photo-4149064.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5759092/pexels-photo-5759092.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/5759242/pexels-photo-5759242.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "https://images.pexels.com/photos/6260921/pexels-photo-6260921.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+      ],
+      "reviews": [
+        {
+          "name": "Meena S.",
+          "rating": 5,
+          "comment": "Divya is amazing! Our maternity photos are absolutely stunning. She made us feel so comfortable.",
+          "date": "2024-02-20"
+        },
+        {
+          "name": "Arun K.",
+          "rating": 4.7,
+          "comment": "Our couple photoshoot with Divya was a wonderful experience. The photos perfectly capture our relationship.",
+          "date": "2023-12-15"
+        }
+      ]
+    }
+  ]
+}
