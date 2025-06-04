@@ -252,7 +252,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
         </div>
       </div>
 
-      {/* Mobile Filter Button remains unchanged */}
+      {/* Mobile Filter Button  */}
       <div className="lg:hidden fixed bottom-4 right-4 z-50">
         <Sheet>
           <SheetTrigger asChild>
@@ -260,7 +260,7 @@ export function FilterSidebar({ className }: FilterSidebarProps) {
               <SlidersHorizontal className="h-5 w-5" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="bottom" className="h-[85vh] rounded-t-xl">
+          <SheetContent side="bottom" className="h-[85vh] p-10 rounded-t-xl">
             <SheetHeader className="mb-5">
               <div className="flex items-center justify-between">
                 <SheetTitle>Filters</SheetTitle>
