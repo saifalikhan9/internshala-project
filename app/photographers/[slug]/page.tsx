@@ -9,13 +9,9 @@ export interface PageProps {
     slug: string;
   };
 }
-import data from '@/db.json';
 
-export async function generateStaticParams() {
-  const photographers = data.photographers;
 
-  return photographers.map((p) => ({ slug: p.slug }));
-}
+
 
 
 export default async function PhotographerProfilePage({ params }: PageProps) {
