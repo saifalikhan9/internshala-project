@@ -44,12 +44,12 @@ export function Navbar() {
           : "bg-transparent py-5"
       )}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 text-[var(--btnColor)]">
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
             <Camera className="h-7 w-7" />
-            <span className="font-bold text-xl sm:text-2xl tracking-tight">Pixisphere</span>
+            <span className="font-bold  text-xl sm:text-2xl tracking-tight">Pixisphere</span>
           </Link>
 
           {/* Desktop Navigation */}

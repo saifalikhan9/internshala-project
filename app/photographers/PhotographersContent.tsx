@@ -28,7 +28,7 @@ export function PhotographersContent() {
       </div>
 
       <div className="flex flex-col lg:flex-row gap-6">
-        <FilterSidebar className="w-full border-foreground lg:w-64 xl:w-72 shrink-0" />
+        <FilterSidebar className="w-full text-[var(--btnColor)] lg:w-64 xl:w-72 shrink-0" />
         <div className="flex-1">
           <PhotographerGrid />
         </div>
