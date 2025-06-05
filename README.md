@@ -1,36 +1,152 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# Pixisphere Photography Platform
 
-First, run the development server:
+Pixisphere is a photography platform that connects clients with photographers based on their preferences, location, and budget.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Features
+
+- **Category Listing Page**: Browse photographers with advanced filtering options  
+- **Photographer Profile Pages**: View detailed profiles with galleries and reviews  
+- **Search Functionality**: Find photographers by name, location, or specialties  
+- **Filtering System**: Filter by price, rating, styles, and location  
+- **Responsive Design**: Works seamlessly on mobile, tablet, and desktop devices  
+- **Inquiry System**: Contact photographers directly through the platform  
+
+## Tech Stack
+
+- **Frontend Framework**: Next.js (App Router)  
+- **Styling**: Tailwind CSS with shadcn/ui components  
+- **State Management**: React Context API  
+- **Form Handling**: React Hook Form with Zod validation  
+- **Image Optimization**: Next.js Image component  
+- **Animation**: Framer Motion for smooth transitions  
+- **Date Handling**: date-fns for date formatting  
+
+## Key Implementation Details
+
+### Filtering System
+
+The filtering system is implemented using React Context API for global state management. The main components are:
+
+1. `FilterContext.tsx` – Provides state and methods for filtering photographers  
+2. `FilterSidebar.tsx` – UI for applying filters  
+3. `useDebounce.tsx` – Custom hook for debouncing filter inputs  
+
+The filtering logic handles multiple filter criteria simultaneously:
+
+```ts
+const filteredPhotographers = useMemo(() => {
+  return photographers.filter((photographer) => {
+    const inPriceRange = 
+      photographer.startingPrice >= filters.priceRange[0] && 
+      photographer.startingPrice <= filters.priceRange[1];
+
+    const meetsRating = photographer.rating >= filters.minRating;
+
+    // Additional filtering criteria...
+
+    return inPriceRange && meetsRating && matchesStyle && matchesCity && matchesSearch;
+  });
+}, [photographers, filters]);
+````
+
+### Debounce Logic
+
+To optimize performance, search and price range inputs are debounced:
+
+```ts
+const debouncedSearch = useDebounce(filters.search, 300);
+const debouncedPriceRange = useDebounce(filters.priceRange, 300);
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The `useDebounce` hook:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```ts
+export function useDebounce<T>(value: T, delay: number): T {
+  const [debouncedValue, setDebouncedValue] = useState<T>(value);
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setDebouncedValue(value);
+    }, delay);
 
-## Learn More
+    return () => {
+      clearTimeout(timer);
+    };
+  }, [value, delay]);
 
-To learn more about Next.js, take a look at the following resources:
+  return debouncedValue;
+}
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Mock API Handling in Next.js
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+To ensure compatibility with Vercel and avoid deployment issues related to JSON Server, a mock API is implemented directly inside the Next.js API route:
 
-## Deploy on Vercel
+```ts
+// app/api/photographers/route.ts
+import { NextResponse } from 'next/server';
+import data from '@/db.json';
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+export async function GET() {
+  return NextResponse.json(data.photographers);
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+> **Note:** This replaces the need to run a separate JSON Server, making it easier to deploy and maintain in serverless environments like Vercel.
+
+## Setup Instructions
+
+1. Clone the repository
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+## Project Structure
+
+* `/app` – Next.js App Router pages
+* `/components` – Reusable React components
+* `/context` – Context providers for state management
+* `/lib` – Utility functions and TypeScript types
+* `/public` – Static assets
+* `/app/api/photographers` – Mock API route serving photographer data
+
+## API Data Structure
+
+The mock API uses data from `db.json` with the following structure:
+
+```ts
+interface Photographer {
+  id: number;
+  name: string;
+  slug: string;
+  profilePicture: string;
+  location: string;
+  startingPrice: number;
+  rating: number;
+  reviewCount: number;
+  styles: string[];
+  tags: string[];
+  bio: string;
+  gallery: string[];
+  reviews: Review[];
+}
+
+interface Review {
+  name: string;
+  rating: number;
+  comment: string;
+  date: string;
+}
+```
+
+
+
