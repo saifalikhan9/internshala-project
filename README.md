@@ -1,4 +1,3 @@
-
 # Pixisphere Photography Platform
 
 Pixisphere is a photography platform that connects clients with photographers based on their preferences, location, and budget.
